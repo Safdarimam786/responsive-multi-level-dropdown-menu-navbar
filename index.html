@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Multi-level Dropdown Menu Example</title>
+    <link
+      href="https://www.cssscript.com/demo/sticky.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="dist/main.css" />
+    <link
+      href="https://www.cssscript.com/demo/sticky.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="nav__container">
+        <div class="nav__mobile">
+          <div class="nav__logo">LOGO</div>
+          <div class="nav__btn">
+            <a aria-label="Mobile menu" class="nav-toggle fade"
+              ><span></span><span class="mrg"></span><span class="mrg"></span
+            ></a>
+          </div>
+        </div>
+        <nav class="menu-toggle">
+          <ul class="nav__menu">
+            <li><a href="">Menu item</a></li>
+            <li><a href="">Menu item</a></li>
+            <li class="dropdown">
+              <a href="#">Dropdown</a>
+              <ul>
+                <li><a href="">Dropdown item 1</a></li>
+                <li><a href="">Dropdown item 2</a></li>
+                <li><a href="">Dropdown item 3</a></li>
+                <li class="dropdown second-level">
+                  <a href="#">2nd level dropdown</a>
+                  <ul>
+                    <li><a href="">Dropdown item 1</a></li>
+                    <li><a href="">Dropdown item 2</a></li>
+                    <li><a href="">Dropdown item 3</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Dropdown item 3</a></li>
+                <li><a href="">Dropdown item 4</a></li>
+              </ul>
+            </li>
+            <li><a href="">Menu item</a></li>
+            <li><a href="">Menu item</a></li>
+            <li><a href="">Menu item</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <style>
+      h1,
+      h2 {
+        text-align: center;
+      }
+    </style>
+    <div align="center" style="margin: 50px auto">
+      <div id="carbon-block"></div>
+      <script
+        async
+        src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+      ></script>
+      <!-- CSSScript Demo Page -->
+      <ins
+        class="adsbygoogle"
+        style="display: inline-block; width: 728px; height: 90px"
+        data-ad-client="ca-pub-2783044520727903"
+        data-ad-slot="3025259193"
+      ></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+    <h1>Responsive Multi-level Dropdown Menu Example</h1>
+    <h2>Resize The Window To See How It Works On Mobile</h2>
+    <script src="dist/main.js"></script>
+    <script>
+      try {
+        fetch(
+          new Request(
+            "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+            { method: "HEAD", mode: "no-cors" }
+          )
+        )
+          .then(function (response) {
+            return true;
+          })
+          .catch(function (e) {
+            var carbonScript = document.createElement("script");
+            carbonScript.src =
+              "//cdn.carbonads.com/carbon.js?serve=CE7DC2JW&placement=wwwcssscriptcom";
+            carbonScript.id = "_carbonads_js";
+            document.getElementById("carbon-block").appendChild(carbonScript);
+          });
+      } catch (error) {
+        console.log(error);
+      }
+    </script>
+    <script>
+      (function (i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        (i[r] =
+          i[r] ||
+          function () {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        "script",
+        "//www.google-analytics.com/analytics.js",
+        "ga"
+      );
+
+      ga("create", "UA-46156385-1", "cssscript.com");
+      ga("send", "pageview");
+    </script>
+  </body>
+</html>
